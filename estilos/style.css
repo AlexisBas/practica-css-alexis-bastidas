@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selector de etiqueta */
+body {
+    background-color: #e8edf2;
+    font-family: Arial, sans-serif;
+    color: #263c50;
+}
+
+/* Selector agrupado */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* ===== Encabezado ===== */
+header {
+    background-color: #19364e;
+    color: #e8d6a5;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Selector de clase */
+.lema {
+    font-style: italic;
+    color: rgb(232, 214, 165);
+    margin-top: 8px;
+}
+
+/* ===== Menú ===== */
+nav {
+    margin-top: 20px;
+}
+
+/* Selector hijo directo */
+nav > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #315570;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #c5a86a;
+    border-radius: 6px;
+}
+
+
+/* Pseudoclase :active */
+nav > a:active {
+    background-color: hsl(40, 45%, 40%);
+    color: white;
+}
+
+/* ===== Contenido ===== */
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #c5a86a;
+}
+
+section h2 {
+    color: #244b67;
+    border-bottom: 1px solid #c5a86a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Selector descendiente */
+section p {
+    color: #526575;
+    font-size: 16px;
+    line-height: 1.8;
+    word-spacing: 2px;
+}
+
+/* Selector de ID */
+#nosotros {
+    background-color: #f7f3e8;
+}
+
+/* Selector hermano adyacente: primer párrafo después del título */
+h2 + p {
+    font-weight: bold;
+    color: #315570;
+}
+
+h2 ~ p {
+    letter-spacing: 0.5px;
+}
+
+.destacado {
+    color: hsl(25, 80%, 45%);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #19364e;
+    color: #e8d6a5;
+    text-align: center;
+    padding: 20px;
+}
