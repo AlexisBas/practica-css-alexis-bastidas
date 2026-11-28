@@ -8,6 +8,7 @@
 </head>
 <body>
     <header id="inicio" class="encabezado">
+        <img src="imagenes/logo.png" alt="Logo Guía de Teyvat" class="logo">
         <h1>Guía de Teyvat</h1>
         <p class="lema">Todo lo que un viajero necesita saber</p>
 
@@ -21,6 +22,7 @@
     </header>
 
     <main>
+        <!-- Presentación -->
         <section id="nosotros">
             <h2>Bienvenidos, viajeros</h2>
             <p>Una guía para conocer el mundo de Genshin Impact.</p>
@@ -28,17 +30,140 @@
             <p>En esta guía encontrarás información sobre sus regiones, personajes y elementos.</p>
         </section>
 
+        <!-- Personajes -->
         <section id="servicios">
             <h2>Personajes</h2>
             <p>Conoce a algunos de los personajes del juego.</p>
+
+            <div class="contenedor">
+                <div class="tarjeta">
+                    <h3>Los siete elementos</h3>
+                    <ul>
+                        <li>Pyro</li>
+                        <li>Hydro</li>
+                        <li>Anemo</li>
+                        <li>Electro</li>
+                        <li>Dendro</li>
+                        <li>Cryo</li>
+                        <li>Geo</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Más información</h3>
+                    <ul class="enlaces">
+                        <li><a href="https://genshin.hoyoverse.com/es/" target="_blank" rel="noopener noreferrer">Sitio oficial del juego</a></li>
+                        <li><a href="https://genshin-impact.fandom.com/es/wiki/" target="_blank" rel="noopener noreferrer">Wiki de Genshin Impact</a></li>
+                        <li><a href="https://www.hoyolab.com/" target="_blank" rel="noopener noreferrer">Comunidad HoYoLAB</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Tabla de personajes</h3>
+            <table>
+                <tr>
+                    <th>Personaje</th>
+                    <th>Elemento</th>
+                    <th>Región</th>
+                    <th>Arma</th>
+                </tr>
+                <tr>
+                    <td>Diluc</td>
+                    <td>Pyro</td>
+                    <td>Mondstadt</td>
+                    <td>Mandoble</td>
+                </tr>
+                <tr>
+                    <td>Venti</td>
+                    <td>Anemo</td>
+                    <td>Mondstadt</td>
+                    <td>Arco</td>
+                </tr>
+                <tr>
+                    <td>Zhongli</td>
+                    <td>Geo</td>
+                    <td>Liyue</td>
+                    <td>Lanza</td>
+                </tr>
+                <tr>
+                    <td>Raiden Shogun</td>
+                    <td>Electro</td>
+                    <td>Inazuma</td>
+                    <td>Lanza</td>
+                </tr>
+                <tr>
+                    <td>Nahida</td>
+                    <td>Dendro</td>
+                    <td>Sumeru</td>
+                    <td>Catalizador</td>
+                </tr>
+                <tr>
+                    <td>Furina</td>
+                    <td>Hydro</td>
+                    <td>Fontaine</td>
+                    <td>Espada ligera</td>
+                </tr>
+            </table>
         </section>
 
+                <!-- Galería -->
         <section id="galeria">
             <h2>Galería de elementos</h2>
-        </section>
+            <p>Haz clic en un elemento para conocer más sobre él.</p>
 
+            <div class="galeria">
+                <a href="https://genshin-impact.fandom.com/es/wiki/Anemo" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image1.jpg" alt="Elemento Anemo">
+                    <span>Anemo</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Geo" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image2.jpg" alt="Elemento Geo">
+                    <span>Geo</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Electro" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image3.jpg" alt="Elemento Electro">
+                    <span>Electro</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Dendro" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image4.jpg" alt="Elemento Dendro">
+                    <span>Dendro</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Hydro" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image5.jpg" alt="Elemento Hydro">
+                    <span>Hydro</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Pyro" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image6.jpg" alt="Elemento Pyro">
+                    <span>Pyro</span>
+                </a>
+                <a href="https://genshin-impact.fandom.com/es/wiki/Cryo" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/image7.jpg" alt="Elemento Cryo">
+                    <span>Cryo</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Contacto -->
         <section id="contacto">
             <h2>Contáctanos</h2>
+            <p>Envíanos tus dudas o sugerencias sobre la guía.</p>
+
+            <form>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre">
+
+                <label>Correo electrónico:</label>
+                <input type="email" placeholder="Ingrese su correo">
+
+                <label>Teléfono:</label>
+                <input type="tel" placeholder="Ingrese su teléfono">
+
+                <label>Mensaje:</label>
+                <textarea placeholder="Escriba su mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
         </section>
     </main>
 
