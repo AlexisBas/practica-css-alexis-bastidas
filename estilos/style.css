@@ -55,11 +55,6 @@ nav > a {
     border-radius: 6px;
 }
 
-/* Pseudoclase :hover */
-nav > a:hover {
-    background-color: #c5a86a;
-    color: #19364e;
-}
 
 /* Pseudoclase :active */
 nav > a:active {
@@ -107,7 +102,6 @@ h2 + p {
     color: #315570;
 }
 
-/* Selector hermanos generales: todos los párrafos después del título */
 h2 ~ p {
     letter-spacing: 0.5px;
 }
@@ -118,7 +112,6 @@ h2 ~ p {
     text-decoration: underline;
 }
 
-/* ===== Pie de página ===== */
 footer {
     background-color: #19364e;
     color: #e8d6a5;
